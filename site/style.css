@@ -20,11 +20,15 @@ header{
 }
 #Logotipo {
     display: block;
-    height: 120px;
+    width: 120px;
+}
+header div{
+    width:120px
 }
 #Avatar{
     display: block;
     height: 80px;
+    margin: 0 auto;
 }
 header nav a{
     font-size: 1.5rem;
