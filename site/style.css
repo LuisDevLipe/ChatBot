@@ -1,3 +1,7 @@
+@font-face {
+    font-family: MusticaPro;
+    src: url(./fonts/mustica_pro/MusticaPro-SemiBold.otf);
+  }
 :root{
     --brand-color:#11103a;
 }
@@ -42,16 +46,182 @@ header nav a:hover{
     border-radius: 0.125rem;
     border-width: 0.25rem;
 }
+div.categoria nav {
+    height: 3.5rem;
+    width:100%;
+    box-shadow: 1px 1px 2px 2px rgba(211,211,211,0.5);
+    padding:0.25rem 1rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap:0.5rem;
+}
+div.categoria nav a {
+    font-family: "MusticaPro";
+    font-size: 1.125rem;
+    color:#000;
+    text-decoration: none;
+    border-left: 1px solid lightgrey;
+    padding: 0.25rem;
+}
 footer {
-    position:fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    background-color:var(--brand-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 4fr;
+    width: 100vw;
     height: 180px;
+    padding: 2rem;
+    background-color:var(--brand-color);
+}
+footer nav {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.375rem;
 }
 footer nav a {
-    font-size: 1.25rem;
+    font-size: 0.875rem;
     color: antiquewhite;
+    text-decoration: none;
+}
+
+section#s1 {
+    height: 80%;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-content: space-evenly;
+    padding: 4rem;
+}
+section#s1 div.env1 {
+    display: flex;
+    justify-content: center;
+    align-content: space-evenly;
+    gap:50px
+}
+
+section#s1 div.env1 div.wrap1 {
+   height: 454px;
+   width: 302px;
+   border-radius: 15px;
+   background-color: rgba(211, 211, 211, 0.445);
+   overflow: hidden;
+}
+section#s1 div.env1 div.wrap1 img#i1,
+section#s1 div.env1 div.wrap1 img#i2,
+section#s1 div.env1 div.wrap1 img#i3 {
+    display: block;
+    width: 310px;
+    object-fit: contain;
+}
+section#s1 h2,
+section#s2 h2,
+section#s3 h2,
+section#s4 h2 {
+    text-align: center;
+    padding-top: 2.5rem;
+    font-family: "MusticaPro";
+    font-size: 48pt;
+}
+span.line{
+    width: 60%;
+    height: 2px;
+    background-color: black;
+    border-radius:50%;
+    margin: 1rem 0;
+}
+section#s2,
+section#s3,
+section#s4 {
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 3.5rem;
+}
+section#s2 div.env2,
+section#s3 div.env3,
+section#s4 div.env4 {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+section#s2 div.env2 div.wrap2{
+    height: 294px;
+    width: 294px;
+    border-radius:50%;
+    overflow: hidden;
+    border: 1px solid black;
+    position: relative;
+}
+section#s2 div.env2 div.wrap2 img#i5 {
+    position:absolute;
+    height: 320px;
+    right:-48%;
+    top:-9%;
+}
+section#s2 div.env2 div.wrap2 img#i4 {
+    position:absolute;
+    height: 350px;
+    left:-38%;
+    top: -10%;
+}
+section#s2 div.env2 div.wrap2 img#i6 {
+    position:absolute;
+    height: 520px;
+    top:-28%;
+    left: -5%;
+}
+section#s3 div.env3 div.wrap3 {
+    height: 294px;
+    width: 294px;
+    border-radius:60px;
+    overflow: hidden;
+    position: relative;
+}
+section#s3 div.env3 div.wrap3 img#i7{
+    position: absolute;
+    height: 315px;
+    left: -30%;
+    top:-5%;
+}
+section#s3 div.env3 div.wrap3 img#i8{
+    position: absolute;
+    height: 380px;
+    top: -15%;
+    left: -30%;
+}
+section#s3 div.env3 div.wrap3 img#i9 {
+    position: absolute;
+    height: 620px;
+    top: -60%;
+    left: -45%;
+}
+section#s4 div.env4 div.wrap4 {
+    position: relative;
+    width: 322px;
+    height:322px;
+    background-color: grey;
+    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+}
+section#s4 div.env4 div.wrap4 img {
+    height: 250px;
+}
+section#s4 div.env4 div.wrap4 img#i10{
+    position:absolute;
+    height: 880px;
+    top: -90%;
+    left: -52%;
+}
+section#s4 div.env4 div.wrap4 img#i11 {
+    position: absolute;
+    height: 900px;
+    top:-120%;
+    left: -65%;
+}
+section#s4 div.env4 div.wrap4 img#i12{
+    position: absolute;
+    height: 400px;
+    left: -50%;
 }
