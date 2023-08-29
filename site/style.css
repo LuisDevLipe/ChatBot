@@ -27,12 +27,36 @@ header{
     width: 120px;
 }
 header div{
-    width:120px
+    position: relative;
+    width:30px;
+    margin:0 90px;
+    
 }
 #Avatar{
     display: block;
     height: 80px;
     margin: 0 auto;
+}
+#cart {
+    display: block;
+    width: 30px;
+    margin: 0 auto;
+}
+header div::after {
+    content:"3";
+    position: absolute;
+    top: 19px;
+    right: 16px;
+    text-align: center;
+    font-family: "MusticaPro";
+    line-height: 1rem;
+    border-radius:50%;
+    padding: 0.125rem;
+    height: 18px;
+    width: 18px;
+    background-color: red;
+    color: #ffffff;
+
 }
 header nav a{
     font-size: 1.5rem;
@@ -67,7 +91,7 @@ div.categoria nav a {
 footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 4fr;
-    width: 100vw;
+    width: 100%;
     height: 180px;
     padding: 2rem;
     background-color:var(--brand-color);
@@ -82,20 +106,18 @@ footer nav a {
     color: antiquewhite;
     text-decoration: none;
 }
-
 section#s1 {
-    height: 80%;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: start;
-    align-content: space-evenly;
     padding: 4rem;
 }
 section#s1 div.env1 {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-content: space-evenly;
     gap:50px
 }
 
@@ -133,7 +155,7 @@ section#s2,
 section#s3,
 section#s4 {
     height: 100%;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -144,6 +166,7 @@ section#s2 div.env2,
 section#s3 div.env3,
 section#s4 div.env4 {
     display: flex;
+    flex-wrap:wrap ;
     justify-content: center;
     gap: 50px;
 }
